@@ -105,7 +105,7 @@ a {
 }
 
 .collapse-content.open {
-  max-height: 500px; /* Adjust the value based on your content height */
+  max-height: 1000px; /* Adjust the value based on your content height */
 }
 
 .icon.rotate {
