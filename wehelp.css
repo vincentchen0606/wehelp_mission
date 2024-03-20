@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.profile-info {
+  padding: 10px;
+}
+
+.profile-info h1 {
+  margin-top: 0;
+}
+
+.profile-info p {
+  line-height: 1.6;
+}
+
+.profile-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.profile-info li {
+  margin-bottom: 10px;
+}
+.card {
+  border-radius: 10px;
+  margin: 50px;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.title {
+  border-radius: 10px;
+  margin: 50px;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  /* margin: 0 auto; 将左右外边距设置为 auto */
+}
+/* .fb {
+  display: inline-block;
+  border-bottom: 1px solid #000;
+} */
+.link1 {
+  color: inherit; /* 讓已訪問過的連結保持其父元素的文字顏色 */
+  text-decoration: none; /* 取消連結的下劃線 */
+}
+a {
+  color: inherit; /* 讓已訪問過的連結保持其父元素的文字顏色 */
+}
+.link1::before {
+  content: "•"; /* 使用 Unicode  */
+  color: black; /* 黑色 */
+  margin-right: 5px; /* 調整點和內容距離 */
+}
+
+.card::after {
+  display: block;
+  content: " ";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: black;
+}
+.underline {
+  text-decoration: underline;
+}
+.card,
+.title {
+  border-radius: 10px;
+  margin: 50px auto; /* 添加 auto 以水平置中 */
+  max-width: 800px; /* 根據需求調整最大寬度 */
+  width: 90%; /* 在更小的視窗中佔用 90% 寬度 */
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.answer {
+  display: none;
+}
+/* .toggle-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+} */
+/*  */
+
+.collapse-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.collapse-content.open {
+  max-height: 500px; /* Adjust the value based on your content height */
+}
+
+.icon.rotate {
+  transform: rotate(180deg);
+}
