@@ -111,3 +111,10 @@ a {
 .icon.rotate {
   transform: rotate(180deg);
 }
+@media screen and (max-width: 600px) {
+  .collapse-content.open {
+    max-height: 100vh;
+    overflow: auto;
+    padding-bottom: 20px;
+  }
+}
