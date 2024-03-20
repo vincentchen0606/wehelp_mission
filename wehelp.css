@@ -105,16 +105,9 @@ a {
 }
 
 .collapse-content.open {
-  max-height: 1000px; /* Adjust the value based on your content height */
+  max-height: 100vh; /* Adjust the value based on your content height */
 }
 
 .icon.rotate {
   transform: rotate(180deg);
-}
-@media screen and (max-width: 600px) {
-  .collapse-content.open {
-    max-height: 100vh;
-    overflow: auto;
-    padding-bottom: 20px;
-  }
 }
